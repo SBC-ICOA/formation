@@ -1,0 +1,11 @@
+ipykernel
+notebook
+jupyterlab
+pandas
+matplotlib
+seaborn
+scikit-learn
+chembl_webresource_client==0.10.5
+rdkit
+nbautoeval
+
