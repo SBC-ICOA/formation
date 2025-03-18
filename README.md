@@ -10,7 +10,19 @@ git clone https://github.com/SBC-ICOA/formation.git
 
 ````bash
 cd formation
-python -m venv .venv
+python -m venv .venv # création de l'environnement
+source .venv/bin/activate # activation de l'environnement
+pip install requirements.txt # installation des librairies
+ipython kernel install --user --name formation_env # déclaration du kernel pour jupyter
+jupyter kernelspec list # liste et localise les kernels
+deactivate # désactivation de l'environnement
+````
+
+## Utilisation des notebooks
+
+````bash
+cd formation
 source .venv/bin/activate
-pip install requirements.txt
+jupyter notebook # permet l'autoévaluation
+jupyter lab # ne permet pas l'autoévaluation
 ````
